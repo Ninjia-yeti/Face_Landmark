@@ -1,0 +1,16 @@
+train: /content/drive/MyDrive/Facial_landmark_detection/dataset/train/images
+val: /content/drive/MyDrive/Facial_landmark_detection/dataset/valid/images
+test: /content/drive/MyDrive/Facial_landmark_detection/dataset/test/images
+
+kpt_shape: [4, 3]
+flip_idx: [0, 1, 2, 3]
+
+nc: 1
+names: ['face']
+
+roboflow:
+  workspace: name-tag
+  project: facial-landmark-detection
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/name-tag/facial-landmark-detection/dataset/2
