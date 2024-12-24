@@ -18,7 +18,7 @@ if uploaded_file is not None:
 
     # Open the uploaded image
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded Image', use_column_width=True)
+    st.image(image, caption='Uploaded Image', use_container_width=True)
 
     if st.button('🔍 Run Detection on Image'):
         with st.spinner('Detecting facial landmarks...'):
@@ -34,7 +34,7 @@ if uploaded_file is not None:
 
             # Display the detected image
             st.subheader('📸 Detection Result:')
-            st.image(result_image_path, caption='Detected Facial Landmarks', use_column_width=True)
+            st.image(result_image_path, caption='Detected Facial Landmarks', use_container_width=True)
 
             # Option to download the result image
             with open(result_image_path, 'rb') as file:
