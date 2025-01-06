@@ -1,0 +1,6 @@
+streamlit==1.41.1          # Streamlit framework
+ultralytics>=8.0.20        # YOLO library for face detection
+opencv-python-headless     # Lightweight OpenCV for cloud environments
+numpy                      # Numerical computations
+pytz>=2020.1               # Timezone utilities
+pip>=24.3.1                # Updated pip to avoid dependency resolution issues
